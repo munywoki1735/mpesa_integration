@@ -1,0 +1,11 @@
+# Access Tech Solutions - M-Pesa Demo
+User-agent: *
+Disallow: /admin/
+Disallow: /callbacks/
+Disallow: /api/
+Disallow: /includes/
+Disallow: /logs/
+Disallow: /config.php
+Disallow: /test_setup.php
+Allow: /
+Sitemap: https://accesstech.co.ke/sitemap.xml

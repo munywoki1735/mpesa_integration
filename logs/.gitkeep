@@ -1,0 +1,12 @@
+# Logs Directory
+
+This directory stores M-Pesa transaction logs.
+
+Logs are automatically created when you make API calls:
+- mpesa_YYYY-MM-DD.log - API requests and responses
+- stk_callbacks_YYYY-MM-DD.log - STK Push callbacks
+- c2b_validation_YYYY-MM-DD.log - C2B validation callbacks
+- c2b_confirmation_YYYY-MM-DD.log - C2B confirmation callbacks
+- b2c_results_YYYY-MM-DD.log - B2C result callbacks
+
+Note: Log files are automatically ignored by git (.gitignore)

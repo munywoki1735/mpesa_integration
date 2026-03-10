@@ -1,0 +1,10 @@
+.env
+.env.local
+.env.production
+logs/*.log
+logs/*.txt
+vendor/
+composer.lock
+*.log
+env.example.txt
+*.zip
