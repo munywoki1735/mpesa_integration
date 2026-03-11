@@ -2,16 +2,6 @@
 /**
  * M-Pesa Daraja API Configuration
  * Access Tech Solutions LTD
- * 
- * SETUP:
- * 1. Rename env.example.txt to .env
- * 2. Update .env with your credentials
- * 3. This file will automatically load from .env if available
- * 
- * SANDBOX TESTING:
- * - STK Push: Use shortcode 174379
- * - C2B Testing: Use PayBill 880100 with Account 5503900011
- * - Test Phone: 254708374149, 254712345678
  */
 
 // Load environment variables if Env class exists
@@ -36,26 +26,6 @@ function env($key, $default = null) {
 return [
     // Environment: 'sandbox' or 'live'
     'environment' => env('MPESA_ENV', 'sandbox'),
-    
-    // Sandbox Credentials
-    'sandbox' => [
-        'consumer_key' => env('MPESA_CONSUMER_KEY', 'zr0mS1g7c2u7vE6YZBBdUWiefU4xBHhizye34lbJsQCGfHws'),
-        'consumer_secret' => env('MPESA_CONSUMER_SECRET', 'B27BMyC3uUbz9XogHirv5LjAlZ2Yp9ZYTYRnS0usdgdczjAtQ4FnGGHCfdH5gSEY'),
-        'passkey' => env('MPESA_PASSKEY', 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'),
-        'shortcode' => env('MPESA_SHORTCODE', '174379'),
-        'initiator_name' => env('MPESA_INITIATOR_NAME', 'testapi'),
-        'security_credential' => env('MPESA_SECURITY_CREDENTIAL', 'YOUR_SECURITY_CREDENTIAL'),
-    ],
-    
-    // Live/Production Credentials
-    'live' => [
-        'consumer_key' => env('MPESA_LIVE_CONSUMER_KEY', 'YOUR_LIVE_CONSUMER_KEY'),
-        'consumer_secret' => env('MPESA_LIVE_CONSUMER_SECRET', 'YOUR_LIVE_CONSUMER_SECRET'),
-        'passkey' => env('MPESA_LIVE_PASSKEY', 'YOUR_LIVE_PASSKEY'),
-        'shortcode' => env('MPESA_LIVE_SHORTCODE', 'YOUR_SHORTCODE'),
-        'initiator_name' => env('MPESA_LIVE_INITIATOR_NAME', 'YOUR_INITIATOR_NAME'),
-        'security_credential' => env('MPESA_LIVE_SECURITY_CREDENTIAL', 'YOUR_SECURITY_CREDENTIAL'),
-    ],
     
     // API Endpoints
     'endpoints' => [
